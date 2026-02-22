@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Computers | Premium PC Parts</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neonCyan: '#00f3ff',
+                        neonMagenta: '#ff00ea',
+                        darkBg: '#050505',
+                        darkerBg: '#020202',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-white antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-neonCyan/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-display font-black text-2xl md:text-3xl uppercase tracking-widest text-white">
+                        Pro<span class="text-neonCyan">Computers</span>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link active px-3 py-2 rounded-md font-medium text-lg">Home</a>
+                        <a href="products.html" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium text-lg">Shop</a>
+                        <a href="about.html" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium text-lg">About</a>
+                        <a href="contact.html" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium text-lg">Contact</a>
+                        <a href="#" class="btn-neon ml-4">Cart(0)</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-8 w-8 text-neonCyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darkerBg border-b border-neonCyan/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-neonCyan">Home</a>
+                <a href="products.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white">Shop</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white">About</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <div class="relative pt-20 pb-32 flex items-center min-h-screen hero-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="hero-content space-y-8">
+                        <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-tight">
+                            Build Your <br/>
+                            <span class="text-neon-cyan glow-text">Dream Rig</span>
+                        </h1>
+                        <p class="text-xl text-gray-400 font-medium">
+                            Premium PC Components for Hardcore Gamers and Professionals. Level up your setup with our latest RGB-infused hardware.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="products.html" class="btn-neon text-lg border-2">Shop Now</a>
+                            <a href="#featured" class="px-8 py-3 rounded-none font-bold text-gray-300 border border-gray-600 hover:border-white transition-colors duration-300">Explore</a>
+                        </div>
+                    </div>
+                    <div class="hero-img-box hidden md:block">
+                        <img src="assets/images/neon_gaming_pc.png" alt="Neon Gaming PC" class="w-full h-auto object-cover rounded-xl border-neon glow-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Categories visually stunning -->
+        <section id="featured" class="py-20 bg-darkerBg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold uppercase"><span class="text-neon-magenta">Featured</span> Gear</h2>
+                    <div class="w-24 h-1 bg-neonMagenta mx-auto mt-4 box-shadow-magenta"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Featured 1 -->
+                    <div class="glass-card rounded-lg overflow-hidden group">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="assets/images/neon_gpu.png" alt="Graphics Cards" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-neonCyan mb-2 font-display">Graphic Cards</h3>
+                            <p class="text-gray-400 mb-4">Unleash maximum framerates with legendary GPUs.</p>
+                            <a href="products.html" class="text-white hover:text-neonCyan font-bold uppercase tracking-wider flex items-center transition">View Collection <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                        </div>
+                    </div>
+                    <!-- Featured 2 -->
+                    <div class="glass-card rounded-lg overflow-hidden group border-neon-magenta">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="assets/images/neon_motherboard.png" alt="Motherboards" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-neonMagenta mb-2 font-display">Motherboards</h3>
+                            <p class="text-gray-400 mb-4">The high-performance foundation for your setup.</p>
+                            <a href="products.html" class="text-white hover:text-neonMagenta font-bold uppercase tracking-wider flex items-center transition">View Collection <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                        </div>
+                    </div>
+                    <!-- Featured 3 -->
+                    <div class="glass-card rounded-lg overflow-hidden group">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="assets/images/neon_keyboard.png" alt="Peripherals" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-neonCyan mb-2 font-display">Peripherals</h3>
+                            <p class="text-gray-400 mb-4">Pro-tier mechanical keyboards & mice with RGB.</p>
+                            <a href="products.html" class="text-white hover:text-neonCyan font-bold uppercase tracking-wider flex items-center transition">View Collection <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / CTA -->
+        <section class="py-20 relative overflow-hidden bg-darkBg border-t border-b border-neonCyan/30">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold font-display uppercase mb-6">Join The <span class="text-neon-cyan">Elite</span> Club</h2>
+                <p class="text-gray-400 text-lg mb-8">Subscribe to get exclusive deals on high-end components before they sell out.</p>
+                <form class="flex flex-col md:flex-row max-w-lg mx-auto border border-gray-700 focus-within:border-neonCyan transition">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="flex-grow bg-transparent text-white px-6 py-4 focus:outline-none font-medium placeholder-gray-600">
+                    <button type="submit" class="bg-neonCyan hover:bg-neonCyan/80 text-black font-bold uppercase tracking-wider px-8 py-4 transition">Join Now</button>
+                </form>
+            </div>
+            <!-- decorative background flair -->
+            <div class="absolute top-1/2 left-0 w-64 h-64 bg-neonCyan/10 rounded-full mix-blend-screen filter blur-[100px] transform -translate-y-1/2"></div>
+            <div class="absolute top-1/2 right-0 w-64 h-64 bg-neonMagenta/10 rounded-full mix-blend-screen filter blur-[100px] transform -translate-y-1/2"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkerBg py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-1">
+                <a href="index.html" class="font-display font-black text-2xl uppercase tracking-widest text-white mb-4 block">
+                    Pro<span class="text-neonCyan">Computers</span>
+                </a>
+                <p class="text-gray-500 text-sm">Empowering gamers and creators with the ultimate PC hardware solutions.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase mb-4 text-lg border-b border-gray-800 pb-2 inline-block">Explore</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="products.html" class="hover:text-neonCyan transition">All Products</a></li>
+                    <li><a href="#" class="hover:text-neonCyan transition">Pre-built PCs</a></li>
+                    <li><a href="#" class="hover:text-neonCyan transition">Components</a></li>
+                    <li><a href="#" class="hover:text-neonCyan transition">Accessories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase mb-4 text-lg border-b border-gray-800 pb-2 inline-block">Support</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="contact.html" class="hover:text-neonCyan transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-neonCyan transition">Shipping Info</a></li>
+                    <li><a href="#" class="hover:text-neonCyan transition">Returns</a></li>
+                    <li><a href="#" class="hover:text-neonCyan transition">Warranty</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase mb-4 text-lg border-b border-gray-800 pb-2 inline-block">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:text-white hover:bg-neonCyan hover:shadow-[0_0_15px_#00f3ff] transition duration-300">
+                        <!-- FB Icon -->
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:text-white hover:bg-neonMagenta hover:shadow-[0_0_15px_#ff00ea] transition duration-300">
+                        <!-- Twitter/X Icon -->
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 text-center text-gray-600 text-sm">
+            &copy; 2026 Pro Computers. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
